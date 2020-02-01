@@ -23,8 +23,8 @@ public class Movimento : MonoBehaviour
 
     private void Update()
     {
-		m_HorizontalInput = Input.GetAxis(m_HorizontalAxisName);
-		m_VerticalInput = Input.GetAxis(m_VerticalAxisName);
+		m_HorizontalInput = Input.GetAxisRaw(m_HorizontalAxisName);
+		m_VerticalInput = Input.GetAxisRaw(m_VerticalAxisName);
 
         m_Movement = new Vector3(m_HorizontalInput, 0.0f, m_VerticalInput).normalized;
 

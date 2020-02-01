@@ -71,8 +71,7 @@ public class RoomCreator : MonoBehaviour
     private void CreateItem(Vector3 position)
     {
         float rate = Random.Range(0.0f, 1.0f);
-
-        if (rate < m_ItemRate)
+        if (rate < m_ItemRate && !MapCreator.Instance.m_Spanwer)
         {
             int index = Random.Range(0, m_Items.Length);
 
