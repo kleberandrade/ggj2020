@@ -11,6 +11,9 @@ public class MapCreator : Singleton<MapCreator>
     public GameObject[] m_Rooms;
     public int m_Size = 6;
 
+    [Header("Player")]
+    public GameObject[] m_Players;
+
     [HideInInspector]
     public bool m_Left;
 
@@ -47,6 +50,7 @@ public class MapCreator : Singleton<MapCreator>
                 position.z = -halfDepth + z * m_Size;
 
                 CreateRoom(position);
+                CreatePlayer(position);
 
                 yield return new WaitForEndOfFrame();
             }
@@ -60,5 +64,30 @@ public class MapCreator : Singleton<MapCreator>
         GameObject tile = Instantiate(m_Rooms[index]);
         tile.transform.position = position;
         tile.transform.parent = transform;
+    }
+
+    private void CreatePlayer(Vector3 position)
+    {
+        Debug.Log($"{position.z}");
+
+        if (m_Left && position.z == 0)
+        {
+            Instantiate(m_Players[0], position + Vector3.up * 1.0f, Quaternion.identity);
+        }
+
+        if (m_Right && position.z == 0)
+        {
+            Instantiate(m_Players[1], position + Vector3.up * 1.0f, Quaternion.identity);
+        }
+
+        if (m_Bottom && position.x == 0)
+        {
+            Instantiate(m_Players[2], position + Vector3.up * 1.0f, Quaternion.identity);
+        }
+
+        if (m_Top && position.x == 0)
+        {
+            Instantiate(m_Players[3], position + Vector3.up * 1.0f, Quaternion.identity);
+        }
     }
 }

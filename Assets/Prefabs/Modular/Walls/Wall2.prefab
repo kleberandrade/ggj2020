@@ -12,7 +12,9 @@ GameObject:
   - component: {fileID: 7829415199168983803}
   - component: {fileID: 72303754883487522}
   - component: {fileID: 2328771891810440847}
-  - component: {fileID: 4721316081102095557}
+  - component: {fileID: 5650763126858142676}
+  - component: {fileID: 3785206900094265840}
+  - component: {fileID: 8924081344808196079}
   m_Layer: 0
   m_Name: Wall2
   m_TagString: Untagged
@@ -1254,12 +1256,10 @@ MonoBehaviour:
   assetGuid: 
   m_IsSelectable: 1
   m_SelectedFaces: 
-  m_SelectedEdges:
-  - a: 149
-    b: 150
-  m_SelectedVertices: 9500000096000000
---- !u!64 &4721316081102095557
-MeshCollider:
+  m_SelectedEdges: []
+  m_SelectedVertices: 
+--- !u!65 &5650763126858142676
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1268,7 +1268,33 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
+  serializedVersion: 2
+  m_Size: {x: 8, y: 1, z: 8}
+  m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!65 &3785206900094265840
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863135271163752693}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 5, z: 8}
+  m_Center: {x: -3.5, y: 2.5, z: 0}
+--- !u!136 &8924081344808196079
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863135271163752693}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 2
+  m_Height: 5
+  m_Direction: 1
+  m_Center: {x: -4, y: 2.5, z: 0}

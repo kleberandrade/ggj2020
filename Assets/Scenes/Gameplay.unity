@@ -389,6 +389,11 @@ MonoBehaviour:
   m_Rooms:
   - {fileID: 2374682249479175281, guid: c34c2ad813eac114ab6f8ad2bee95cf6, type: 3}
   m_Size: 48
+  m_Players:
+  - {fileID: 1914056075526609123, guid: fea9c2d360868e74b942e794385d10f2, type: 3}
+  - {fileID: 1914056075526609123, guid: fea9c2d360868e74b942e794385d10f2, type: 3}
+  - {fileID: 1914056075526609123, guid: fea9c2d360868e74b942e794385d10f2, type: 3}
+  - {fileID: 1914056075526609123, guid: fea9c2d360868e74b942e794385d10f2, type: 3}
   m_Left: 0
   m_Top: 0
   m_Right: 0

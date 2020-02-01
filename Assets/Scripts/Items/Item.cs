@@ -21,7 +21,9 @@ public class Item : MonoBehaviour
 
     private void Start()
     {
-        Invisible();
+        m_Collider.enabled = false;
+        m_Renderer.material = m_Invisible;
+        m_Visible = false;
     }
 
     private void Update()
@@ -58,6 +60,5 @@ public class Item : MonoBehaviour
         m_Visible = false;
 
         m_Count--;
-        if (m_Count < 0) m_Count = 0;
     }
 }
