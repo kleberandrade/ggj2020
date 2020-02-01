@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Item
+  - M_P1
+  - Place_P1
   layers:
   - Default
   - TransparentFX
