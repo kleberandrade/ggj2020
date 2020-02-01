@@ -10,3 +10,9 @@ Kleber de Oliveira Andrade
 
 t:Level Designer
 Leonardo Dantas Gomes de Lira
+
+t:Sound Designers
+Diego Giacomini
+Leonardo Porto Passos
+
+t:Game Designers
