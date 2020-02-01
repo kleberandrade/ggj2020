@@ -125,6 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnPoint: {fileID: 2484735977327801135}
   Drone: {fileID: 2427007667916227210, guid: 14c0650bb345b1f478de60fff9f73ee2, type: 3}
+  Cinemachine: {fileID: 4101541110990214341}
 --- !u!1 &4101541110204828551
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,8 +244,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4101541110990214338}
-  m_LocalRotation: {x: 0.22975291, y: -0.000000012977719, z: 0.00000012986528, w: 0.9732491}
-  m_LocalPosition: {x: 0, y: 100, z: -10}
+  m_LocalRotation: {x: 0.22975306, y: -0.00000004310872, z: 0.00000013697826, w: 0.973249}
+  m_LocalPosition: {x: 0, y: 100.00008, z: -10}
   m_LocalScale: {x: 0.2, y: 2.0833333, z: 0.617284}
   m_Children:
   - {fileID: 4101541110204828550}
@@ -312,8 +313,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4101541111605630650}
-  m_LocalRotation: {x: 0.22975291, y: -0.000000012977719, z: 0.00000012986528, w: 0.9732491}
-  m_LocalPosition: {x: 0, y: 100, z: -10}
+  m_LocalRotation: {x: 0.22975306, y: -0.00000004310872, z: 0.00000013697826, w: 0.973249}
+  m_LocalPosition: {x: 0, y: 100.00008, z: -10}
   m_LocalScale: {x: 0.2, y: 2.0833333, z: 0.617284}
   m_Children: []
   m_Father: {fileID: 2484735977327801131}
