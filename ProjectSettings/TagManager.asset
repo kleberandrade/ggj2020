@@ -6,7 +6,9 @@ TagManager:
   tags:
   - Item
   - M_P1
-  - Place_P1
+  - M_P2
+  - M_P3
+  - M_P4
   layers:
   - Default
   - TransparentFX
