@@ -26,6 +26,9 @@ public class MapCreator : Singleton<MapCreator>
     [HideInInspector]
     public bool m_Bottom;
 
+    [HideInInspector]
+    public bool m_Spanwer;
+
     private void Start()
     {
         StartCoroutine(CreateMap());
@@ -48,6 +51,9 @@ public class MapCreator : Singleton<MapCreator>
                 Vector3 position = Vector3.zero;
                 position.x = -halfWidth + x * m_Size;
                 position.z = -halfDepth + z * m_Size;
+
+
+                m_Spanwer = (m_Left && position.z == 0) || (m_Right && position.z == 0) || (m_Bottom && position.x == 0) || (m_Top && position.x == 0);
 
                 CreateRoom(position);
                 CreatePlayer(position);

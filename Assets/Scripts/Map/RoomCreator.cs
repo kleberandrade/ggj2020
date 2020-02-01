@@ -53,15 +53,19 @@ public class RoomCreator : MonoBehaviour
         }
     }
 
-    private GameObject GetRandomTile(GameObject[] tiles, Vector3 position)
+    private GameObject GetTile(GameObject[] tiles, Vector3 position, int index)
     {
-        int index = Random.Range(0, tiles.Length);
-
         GameObject tile = Instantiate(tiles[index]);
         tile.transform.position = position;
         tile.transform.parent = transform;
 
         return tile;
+    }
+
+    private GameObject GetRandomTile(GameObject[] tiles, Vector3 position)
+    {
+        int index = Random.Range(0, tiles.Length);
+        return GetTile(tiles, position, index);
     }
 
     private void CreateItem(Vector3 position)
@@ -86,8 +90,16 @@ public class RoomCreator : MonoBehaviour
         if (x == 0 || z == 0 || x == m_Width - 1 || z == m_Depth - 1)
             return;
 
-        GameObject tile = GetRandomTile(m_Floors, position);
-        tile.transform.rotation = Quaternion.identity;
+        if (!MapCreator.Instance.m_Spanwer)
+        {
+            GameObject tile = GetRandomTile(m_Floors, position);
+            tile.transform.rotation = Quaternion.identity;
+        } 
+        else
+        {
+            GameObject tile = GetTile(m_Floors, position, 0);
+            tile.transform.rotation = Quaternion.identity;
+        }
     }
 
     private bool CreateCorner(int x, int z, Vector3 position)
