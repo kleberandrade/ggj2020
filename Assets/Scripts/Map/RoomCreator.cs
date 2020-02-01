@@ -17,6 +17,11 @@ public class RoomCreator : MonoBehaviour
     public GameObject[] m_Halls;
     public float m_DoorRate = 0.5f;
 
+    [Header("Items")]
+    public GameObject[] m_Items;
+    public float m_ItemRate = 0.3f;
+    public float m_ItemNoise = 0.2f;
+
     private void Start()
     {
         CreateRoom();
@@ -42,6 +47,8 @@ public class RoomCreator : MonoBehaviour
                     CreateWall(x, z, position);
                     CreateGround(x, z, position);
                 }
+
+                CreateItem(position);
             }
         }
     }
@@ -55,6 +62,23 @@ public class RoomCreator : MonoBehaviour
         tile.transform.parent = transform;
 
         return tile;
+    }
+
+    private void CreateItem(Vector3 position)
+    {
+        float rate = Random.Range(0.0f, 1.0f);
+
+        if (rate < m_ItemRate)
+        {
+            int index = Random.Range(0, m_Items.Length);
+
+            position.y += 3.0f;
+            position.x += Random.Range(-m_Size * m_ItemNoise, m_Size * m_ItemNoise);
+            position.z += Random.Range(-m_Size * m_ItemNoise, m_Size * m_ItemNoise);
+
+            float rotate = Random.Range(0.0f, 360.0f);
+            Instantiate(m_Items[index], position, Quaternion.Euler(Vector3.up * rotate));
+        }
     }
 
     private void CreateGround(int x, int z, Vector3 position)
@@ -106,7 +130,7 @@ public class RoomCreator : MonoBehaviour
 
         if (x == 0)
         {
-            if (z == m_Depth / 2 && Random.Range(0.0f, 1.0f) < m_DoorRate && !MapBuilder.Instance.m_Left)
+            if (z == m_Depth / 2 && Random.Range(0.0f, 1.0f) < m_DoorRate && !MapCreator.Instance.m_Left)
             {
                 tile = GetRandomTile(m_Doors, position);
                 hall = GetRandomTile(m_Halls, position + Vector3.left * m_Size);
@@ -121,7 +145,7 @@ public class RoomCreator : MonoBehaviour
 
         if (z == 0)
         {
-            if (x == m_Width / 2 && Random.Range(0.0f, 1.0f) < m_DoorRate && !MapBuilder.Instance.m_Bottom)
+            if (x == m_Width / 2 && Random.Range(0.0f, 1.0f) < m_DoorRate && !MapCreator.Instance.m_Bottom)
             {
                 tile = GetRandomTile(m_Doors, position);
                 hall = GetRandomTile(m_Halls, position + Vector3.back * m_Size);
@@ -137,7 +161,7 @@ public class RoomCreator : MonoBehaviour
 
         if (x == m_Width - 1)
         {
-            if (z == m_Depth / 2 && Random.Range(0.0f, 1.0f) < m_DoorRate && !MapBuilder.Instance.m_Right)
+            if (z == m_Depth / 2 && Random.Range(0.0f, 1.0f) < m_DoorRate && !MapCreator.Instance.m_Right)
             {
                 tile = GetRandomTile(m_Doors, position);
                 hall = GetRandomTile(m_Halls, position + Vector3.right * m_Size);
@@ -152,7 +176,7 @@ public class RoomCreator : MonoBehaviour
 
         if (z == m_Depth - 1)
         {
-            if (x == m_Width / 2 && Random.Range(0.0f, 1.0f) < m_DoorRate && !MapBuilder.Instance.m_Top)
+            if (x == m_Width / 2 && Random.Range(0.0f, 1.0f) < m_DoorRate && !MapCreator.Instance.m_Top)
             {
                 tile = GetRandomTile(m_Doors, position);
                 hall = GetRandomTile(m_Halls, position + Vector3.forward * m_Size);

@@ -1,7 +1,7 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 
-public class MapBuilder : Singleton<MapBuilder>
+public class MapCreator : Singleton<MapCreator>
 {
     [Header("Dimension")]
     public int m_Width = 5;

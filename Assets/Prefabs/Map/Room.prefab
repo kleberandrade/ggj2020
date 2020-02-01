@@ -59,3 +59,7 @@ MonoBehaviour:
   m_Halls:
   - {fileID: 2733201575816622874, guid: c3eebd0f9a5878e4d8a1ce458ffc8380, type: 3}
   m_DoorRate: 1
+  m_Items:
+  - {fileID: 2998011688827844376, guid: 8e67849a466c87249ad18ec746d4c174, type: 3}
+  m_ItemRate: 0.1
+  m_ItemNoise: 0.2
