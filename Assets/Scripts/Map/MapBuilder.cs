@@ -25,10 +25,10 @@ public class MapBuilder : Singleton<MapBuilder>
 
     private void Start()
     {
-        StartCoroutine(CreateMap());
+        CreateMap();
     }
 
-    private IEnumerator CreateMap()
+    private void CreateMap()
     {
         float halfWidth = (m_Width * m_Size - m_Size) * 0.5f;
         float halfDepth = (m_Depth * m_Size - m_Size) * 0.5f;
@@ -47,8 +47,6 @@ public class MapBuilder : Singleton<MapBuilder>
                 position.z = -halfDepth + z * m_Size;
 
                 CreateRoom(position);
-
-                yield return new WaitForSeconds(1.0f);
             }
         }
     }

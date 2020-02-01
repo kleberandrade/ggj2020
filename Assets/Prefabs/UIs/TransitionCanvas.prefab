@@ -63,8 +63,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: cb4544397ba874a4b8597619cd9edbee, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -137,7 +135,7 @@ GameObject:
   - component: {fileID: 3066842199437343044}
   - component: {fileID: 3066842199437343043}
   - component: {fileID: 3066842199437343042}
-  - component: {fileID: 3066842199437343045}
+  - component: {fileID: 6261607928357959070}
   m_Layer: 5
   m_Name: LoadingIcon
   m_TagString: Untagged
@@ -190,8 +188,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 8cdd2c34980278c469ee8ae29b166510, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
@@ -202,7 +198,7 @@ MonoBehaviour:
   m_FillOrigin: 1
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &3066842199437343045
+--- !u!114 &6261607928357959070
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -211,11 +207,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3066842199437343047}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6b34696f7343b4da89de419d854a6d, type: 3}
+  m_Script: {fileID: 11500000, guid: 752c824be615f9946963c33f756e7199, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Speed: 180
   m_RotateAxis: {x: 0, y: 0, z: 1}
-  m_RotateSpeed: -270
 --- !u!1 &3066842199503065933
 GameObject:
   m_ObjectHideFlags: 0
@@ -328,7 +324,7 @@ GameObject:
   - component: {fileID: 3066842199680088141}
   - component: {fileID: 3066842199680088139}
   - component: {fileID: 3066842199680088138}
-  - component: {fileID: 3066842199680088136}
+  - component: {fileID: 770800518212995043}
   m_Layer: 5
   m_Name: LoadingIcon (1)
   m_TagString: Untagged
@@ -381,8 +377,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 8cdd2c34980278c469ee8ae29b166510, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
@@ -393,7 +387,7 @@ MonoBehaviour:
   m_FillOrigin: 1
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &3066842199680088136
+--- !u!114 &770800518212995043
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -402,11 +396,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3066842199680088140}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6b34696f7343b4da89de419d854a6d, type: 3}
+  m_Script: {fileID: 11500000, guid: 752c824be615f9946963c33f756e7199, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Speed: 180
   m_RotateAxis: {x: 0, y: 0, z: 1}
-  m_RotateSpeed: 180
 --- !u!1 &3066842200293177533
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,8 +465,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
