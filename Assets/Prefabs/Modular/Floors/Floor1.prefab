@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8114511849258328636}
   - component: {fileID: 2573145087643597905}
   - component: {fileID: 7840127041075698150}
-  - component: {fileID: 4888092976511429046}
+  - component: {fileID: 9119423395754997947}
   m_Layer: 0
   m_Name: Floor1
   m_TagString: Untagged
@@ -296,8 +296,8 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
---- !u!64 &4888092976511429046
-MeshCollider:
+--- !u!65 &9119423395754997947
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -306,7 +306,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
+  serializedVersion: 2
+  m_Size: {x: 8, y: 1, z: 8}
+  m_Center: {x: 0, y: 0.5, z: 0}
