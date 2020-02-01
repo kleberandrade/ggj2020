@@ -7,6 +7,7 @@ public class Controller : MonoBehaviour
     
     public Drop DropScript;
     public Pick PickScript;
+    public Spawn SpawnScript;
     public int Itens = 0;
     // Start is called before the first frame update
     void Start()
@@ -17,7 +18,13 @@ public class Controller : MonoBehaviour
     // Update is called once per frame
     void Death()
     {
+        Invoke("RemoveCooldown",2);
         Destroy(PickScript);
         DropScript.DropDeath();
+    }
+
+    void RemoveCooldown(){
+        SpawnScript.CoolDownToSpawn();
+        Destroy(this);
     }
 }
