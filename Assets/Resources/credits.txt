@@ -1,0 +1,10 @@
+﻿t:Producers
+Kleber de Oliveira Andrade
+
+t:Designers
+Anna Clara Napoleao
+Mariana de Luca Reis
+
+t:Programmers
+Grabriel Diniz Cassimiro de Oliveira
+Tiago Carnevalli Elias
