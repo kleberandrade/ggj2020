@@ -52,7 +52,6 @@ public class MapCreator : Singleton<MapCreator>
                 position.x = -halfWidth + x * m_Size;
                 position.z = -halfDepth + z * m_Size;
 
-
                 m_Spanwer = (m_Left && position.z == 0) || (m_Right && position.z == 0) || (m_Bottom && position.x == 0) || (m_Top && position.x == 0);
 
                 CreateRoom(position);
@@ -74,26 +73,24 @@ public class MapCreator : Singleton<MapCreator>
 
     private void CreatePlayer(Vector3 position)
     {
-        Debug.Log($"{position.z}");
-
         if (m_Left && position.z == 0)
         {
-            Instantiate(m_Players[0], position + Vector3.up * 1.0f, Quaternion.identity);
+            Instantiate(m_Players[0], position + Vector3.up * 1.0f, Quaternion.Euler(0.0f, 90.0f, 0.0f));
         }
 
         if (m_Right && position.z == 0)
         {
-            Instantiate(m_Players[1], position + Vector3.up * 1.0f, Quaternion.identity);
+            Instantiate(m_Players[1], position + Vector3.up * 1.0f, Quaternion.Euler(0.0f, 270.0f, 0.0f));
         }
 
         if (m_Bottom && position.x == 0)
         {
-            Instantiate(m_Players[2], position + Vector3.up * 1.0f, Quaternion.identity);
+            Instantiate(m_Players[2], position + Vector3.up * 1.0f, Quaternion.Euler(0.0f, 0.0f, 0.0f));
         }
 
         if (m_Top && position.x == 0)
         {
-            Instantiate(m_Players[3], position + Vector3.up * 1.0f, Quaternion.identity);
+            Instantiate(m_Players[3], position + Vector3.up * 1.0f, Quaternion.Euler(0.0f, 180.0f, 0.0f));
         }
     }
 }
