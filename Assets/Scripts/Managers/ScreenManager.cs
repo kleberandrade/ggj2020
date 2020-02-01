@@ -5,15 +5,12 @@ using UnityEngine.SceneManagement;
 public class ScreenManager : Singleton<ScreenManager>
 {
     [Header("Transition")]
-    [SerializeField]
-    private Animator m_FaderAnimator;
+    public Animator m_FaderAnimator;
 
     [Header("Loading")]
-    [SerializeField]
-    private GameObject m_LoadingPanel;
+    public GameObject m_LoadingPanel;
 
-    [SerializeField]
-    private float m_DelayAfterLaoding = 2.0f;
+    public float m_DelayAfterLaoding = 2.0f;
 
     public void LoadLevel(string nextSceneName)
     {

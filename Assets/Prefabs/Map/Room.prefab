@@ -48,6 +48,8 @@ MonoBehaviour:
   m_Size: 8
   m_Corners:
   - {fileID: 6562560741151589213, guid: de9503e30af0def4dbd9ae52c2c13921, type: 3}
+  - {fileID: 4297926842927788670, guid: 59cc7d26295cfbd419d1b34c085dc7fa, type: 3}
+  - {fileID: 1490306003712076766, guid: 90fe84d295741ef44a37bf3b41974050, type: 3}
   m_Walls:
   - {fileID: 4398663206333359562, guid: f5f74ce8d5dd03a4b8a8f4ccc881ea3e, type: 3}
   m_Floors:
