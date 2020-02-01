@@ -7,10 +7,10 @@ public class Item : MonoBehaviour
     [Header("Materials")]
     public Material m_Normal;
     public Material m_Invisible;
+    public GameObject m_Particulas;
 
     private Renderer m_Renderer;
     private Collider m_Collider;
-    public Light m_Light;
 
     private bool m_Visible;
     
@@ -23,7 +23,7 @@ public class Item : MonoBehaviour
     private void Start()
     {
         m_Collider.enabled = false;
-        m_Light.enabled = false;
+        m_Particulas.SetActive(false);
         m_Renderer.material = m_Invisible;
         m_Visible = false;
     }
@@ -49,7 +49,7 @@ public class Item : MonoBehaviour
     private void Visible()
     {
         m_Collider.enabled = true;
-        m_Light.enabled = true;
+        m_Particulas.SetActive(true);
         m_Renderer.material = m_Normal;
         m_Visible = true;
 
@@ -59,7 +59,7 @@ public class Item : MonoBehaviour
     private void Invisible()
     {
         m_Collider.enabled = false;
-        m_Light.enabled = false;
+        m_Particulas.SetActive(false);
         m_Renderer.material = m_Invisible;
         m_Visible = false;
 

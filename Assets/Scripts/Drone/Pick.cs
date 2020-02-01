@@ -20,6 +20,7 @@ public class Pick : MonoBehaviour
         if(other.CompareTag("Item")){
             
             if(ControllerScript.Itens < 3){
+                Item.m_Count--;
                 Destroy(other.gameObject);
                 ControllerScript.Itens++;
             }
