@@ -10,6 +10,7 @@ public class Item : MonoBehaviour
 
     private Renderer m_Renderer;
     private Collider m_Collider;
+    public Light m_Light;
 
     private bool m_Visible;
     
@@ -22,6 +23,7 @@ public class Item : MonoBehaviour
     private void Start()
     {
         m_Collider.enabled = false;
+        m_Light.enabled = false;
         m_Renderer.material = m_Invisible;
         m_Visible = false;
     }
@@ -47,6 +49,7 @@ public class Item : MonoBehaviour
     private void Visible()
     {
         m_Collider.enabled = true;
+        m_Light.enabled = true;
         m_Renderer.material = m_Normal;
         m_Visible = true;
 
@@ -56,6 +59,7 @@ public class Item : MonoBehaviour
     private void Invisible()
     {
         m_Collider.enabled = false;
+        m_Light.enabled = false;
         m_Renderer.material = m_Invisible;
         m_Visible = false;
 
