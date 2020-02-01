@@ -45,15 +45,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Width: 5
   m_Depth: 5
-  m_Size: 4
+  m_Size: 8
   m_Corners:
-  - {fileID: 2766864231403093688, guid: 13b423f09ac5d564b9cfd60ca6f3199d, type: 3}
+  - {fileID: 6562560741151589213, guid: de9503e30af0def4dbd9ae52c2c13921, type: 3}
+  - {fileID: 4297926842927788670, guid: 59cc7d26295cfbd419d1b34c085dc7fa, type: 3}
+  - {fileID: 1490306003712076766, guid: 90fe84d295741ef44a37bf3b41974050, type: 3}
   m_Walls:
-  - {fileID: 1138930949855444553, guid: a07dd13d6a03b5a4f84608bb1ec6f1fe, type: 3}
-  m_Grounds:
-  - {fileID: 3959641336021841248, guid: a08ce3057d0995e478f215fb98d97927, type: 3}
+  - {fileID: 4398663206333359562, guid: f5f74ce8d5dd03a4b8a8f4ccc881ea3e, type: 3}
+  - {fileID: 863135271163752693, guid: 1560b8ee3250f754c83d12887718ca39, type: 3}
+  m_Floors:
+  - {fileID: 4431906187882872863, guid: ba3e541fec7c6e44184b448c03bed1c4, type: 3}
+  - {fileID: 2413391855930984751, guid: 7a346ddf649d0ac4a88998167e282aa4, type: 3}
+  - {fileID: 726801579067286299, guid: cb5d384ba0c88bd43996204a80e9ceff, type: 3}
   m_Doors:
-  - {fileID: 8092364103116623787, guid: f47c9b52d83bf66468af7909ff98d0b3, type: 3}
+  - {fileID: 322701730630384570, guid: 4ec2c99f3bc1a9c40aa4ef293de6e920, type: 3}
   m_Halls:
-  - {fileID: 4889754258332547910, guid: ceeabecdfe867cc408b9c97d97f2e674, type: 3}
+  - {fileID: 2733201575816622874, guid: c3eebd0f9a5878e4d8a1ce458ffc8380, type: 3}
+  - {fileID: 1048119912238179331, guid: 1a7c3e53d483b3b42b9f86912820a38c, type: 3}
   m_DoorRate: 1
+  m_Items:
+  - {fileID: 2998011688827844376, guid: 8e67849a466c87249ad18ec746d4c174, type: 3}
+  m_ItemRate: 0.1
+  m_ItemNoise: 0.2

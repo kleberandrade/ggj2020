@@ -1,10 +1,12 @@
-﻿t:Producers
-Kleber de Oliveira Andrade
+﻿t:3D Artist
+Erik Araújo Riccioppo
 
-t:Designers
-Anna Clara Napoleao
-Mariana de Luca Reis
+t:2D Artist
+Matheus D'luca da Silva Lino
 
 t:Programmers
-Grabriel Diniz Cassimiro de Oliveira
-Tiago Carnevalli Elias
+João Felipe de Lima Coleoni
+Kleber de Oliveira Andrade
+
+t:Level Designer
+Leonardo Dantas Gomes de Lira

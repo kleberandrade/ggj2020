@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Item
+  - M_P1
+  - M_P2
+  - M_P3
+  - M_P4
   layers:
   - Default
   - TransparentFX
@@ -13,10 +18,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - P1 Camera
+  - P2 Camera
+  - P3 Camera
+  - P4 Camera
   - 
   - 
   - 
