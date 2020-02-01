@@ -956,7 +956,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1795342825}
+      - m_Target: {fileID: 1389023534}
         m_MethodName: LoadLevel
         m_Mode: 5
         m_Arguments:
@@ -1075,11 +1075,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1389023528}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c53d7d4580fd96e4a9d620772ab67478, type: 3}
+  m_Script: {fileID: 11500000, guid: 68dca1ca047e9df47bfbdbab0de3ad4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SmoothTime: 6
-  m_CanvasGroup: {fileID: 0}
+  m_UseTimeToChangeScene: 0
+  m_Time: 3
+  m_SceneName: 
 --- !u!225 &1389023535
 CanvasGroup:
   m_ObjectHideFlags: 0

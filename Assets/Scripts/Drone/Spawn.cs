@@ -1,17 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using Cinemachine;
+﻿using UnityEngine;
 
 public class Spawn : MonoBehaviour
 {
     public GameObject SpawnPoint;
     public GameObject Drone;
-    public CinemachineVirtualCamera Cinemachine;
+    public CameraFollow m_Camera;
     private bool Cooldown = false;
-    // Start is called before the first frame update
 
-    // Update is called once per frame
+    private void Start()
+    {
+        m_Camera = GetComponentInChildren<CameraFollow>();
+    }
+
     void Update()
     {
         if (Input.GetKeyDown("space") && !Cooldown)
@@ -19,14 +19,12 @@ public class Spawn : MonoBehaviour
             Cooldown = true;
             var AUX = Instantiate<GameObject>(Drone, SpawnPoint.transform.position + new Vector3(0.0f, 2.0f, 0.0f), SpawnPoint.transform.rotation);
             AUX.GetComponent<Controller>().SpawnScript = this; 
-            AUX.GetComponent<Controller>().Cinemachine = Cinemachine; 
+            AUX.GetComponent<Controller>().Camera = m_Camera; 
             AUX.GetComponent<Controller>().SpawnTransform = transform; 
-            Cinemachine.Follow = AUX.transform;
-            Cinemachine.LookAt = AUX.transform;
+            m_Camera.m_Target = AUX.transform;
         }
     }
 
-    // Update is called once per frame
     public void CoolDownToSpawn()
     {
         Cooldown = false;
