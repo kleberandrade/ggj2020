@@ -3,7 +3,27 @@ guid: 41bf29cf15e4c984f81349534fac84da
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Asas
+    second: {fileID: 2100000, guid: 93a052162019e8748a305ff7843c474a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black
+    second: {fileID: 2100000, guid: 1b85951ec9a1f5b4ca8367fc05c11406, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: NeonColor
+    second: {fileID: 2100000, guid: 5a0b00e27dbbd5b498b665898d4dbf7e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PlayerColor
+    second: {fileID: 2100000, guid: ffb387c0b606f6849aa15036de5a2edd, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
