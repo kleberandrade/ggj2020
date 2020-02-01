@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChanceScene : MonoBehaviour
+public class ChangeScene : MonoBehaviour
 {
     public bool m_UseTimeToChangeScene = false;
     public float m_Time = 3.0f;
