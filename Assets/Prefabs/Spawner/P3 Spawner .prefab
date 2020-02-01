@@ -123,6 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6997e2f24bc67ea40a6680124d0052a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SpawnCommand: XboxOneButtonA3
   SpawnPoint: {fileID: 578704022848447027}
   Drone: {fileID: 2427007667916227210, guid: 2e2bcbc444263c64e924f44d2d081a03, type: 3}
   m_Camera: {fileID: 3348822145923722730}

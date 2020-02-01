@@ -4805,8 +4805,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d774bf492fb13442b540979a71e55aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_HorizontalAxisName: Horizontal
-  m_VerticalAxisName: Vertical
+  m_HorizontalAxisName: XboxOneLeftStickHorizontal4
+  m_VerticalAxisName: XboxOneLeftStickVertical4
   m_Speed: 25
   m_LayerMask:
     serializedVersion: 2
