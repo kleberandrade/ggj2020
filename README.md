@@ -4,6 +4,18 @@ Project created for the global game jam 2020
 
 ## The Game
 
+Four space heroines, must control their 20-second battery drones, to find the parts and fix their cookie machine.
+
+### Platforms 
+
+* MS Windows
+
+### Tools
+
+* Unity 2019.3.0f6
+* Blender
+* VS Code
+
 ## Diversifiers used
 
 * **A kind of cooperation (sponsored by Sony Interactive Entertainment)** - Create a co-operative multiplayer game that encourages collaboration and kindness.
@@ -16,11 +28,11 @@ Project created for the global game jam 2020
 
 ## Team
 
-* Erik Araújo Riccioppo
-* João Felipe de Lima Coleoni
-* Kleber de Oliveira Andrade
-* Leonardo Dantas Gomes de Lira
-* Matheus D'luac da Silva Lino
+* Erik Araújo Riccioppo (3d Artist)
+* João Felipe de Lima Coleoni (Programmer)
+* Kleber de Oliveira Andrade (Programmer)
+* Leonardo Dantas Gomes de Lira (Level Design)
+* Matheus D'luac da Silva Lino (2d Artist)
 
 ## License
 
