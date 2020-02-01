@@ -52,6 +52,7 @@ MonoBehaviour:
   - {fileID: 1490306003712076766, guid: 90fe84d295741ef44a37bf3b41974050, type: 3}
   m_Walls:
   - {fileID: 4398663206333359562, guid: f5f74ce8d5dd03a4b8a8f4ccc881ea3e, type: 3}
+  - {fileID: 863135271163752693, guid: 1560b8ee3250f754c83d12887718ca39, type: 3}
   m_Floors:
   - {fileID: 4431906187882872863, guid: ba3e541fec7c6e44184b448c03bed1c4, type: 3}
   - {fileID: 2413391855930984751, guid: 7a346ddf649d0ac4a88998167e282aa4, type: 3}
@@ -60,6 +61,7 @@ MonoBehaviour:
   - {fileID: 322701730630384570, guid: 4ec2c99f3bc1a9c40aa4ef293de6e920, type: 3}
   m_Halls:
   - {fileID: 2733201575816622874, guid: c3eebd0f9a5878e4d8a1ce458ffc8380, type: 3}
+  - {fileID: 1048119912238179331, guid: 1a7c3e53d483b3b42b9f86912820a38c, type: 3}
   m_DoorRate: 1
   m_Items:
   - {fileID: 2998011688827844376, guid: 8e67849a466c87249ad18ec746d4c174, type: 3}
