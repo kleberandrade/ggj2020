@@ -17,7 +17,7 @@ public class Spawn : MonoBehaviour
     {
         if (Input.GetKeyDown("space"))
         {
-            Instantiate<GameObject>(Drone, SpawnPoint.transform.position, SpawnPoint.transform.rotation); 
+            Instantiate<GameObject>(Drone, SpawnPoint.transform.position + new Vector3(0.0f, 2.0f, 0.0f), SpawnPoint.transform.rotation); 
         }
     }
 }

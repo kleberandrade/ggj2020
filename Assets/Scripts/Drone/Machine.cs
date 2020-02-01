@@ -4,24 +4,21 @@ using UnityEngine;
 
 public class Machine : MonoBehaviour
 {
-    public GameObject Spot1;
-    public GameObject Spot2;
-    public GameObject Spot3;
-    private int Level = 0;
+    public int Level = 0;
+
     public int Itens = 0;
-    // Start is called before the first frame update
-    void Start()
+    // Update is called once per frame
+    public void UpdateItens(int ItensADD)
     {
-        
-        
+        Itens += ItensADD;
+        if(Itens >= 3){
+            Itens = Itens - 3;
+            Level++;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public int FurtarItens()
     {
-        if(Itens > 3){
-            Level++;
-            Itens = Itens - 3;
-        }
+        return Itens;
     }
 }

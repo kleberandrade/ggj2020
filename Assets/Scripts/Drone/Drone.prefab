@@ -142,6 +142,7 @@ GameObject:
   - component: {fileID: 3830350788394160392}
   - component: {fileID: 4597395571956292785}
   - component: {fileID: 2506202822709912704}
+  - component: {fileID: 7179087860070315332}
   m_Layer: 0
   m_Name: Drone
   m_TagString: Untagged
@@ -226,7 +227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ControllerScript: {fileID: 3830350788394160392}
   MachineScript: {fileID: 0}
-  Nome_Tag: 
+  Nome_Tag: M_P1
 --- !u!114 &2506202822709912704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,6 +244,19 @@ MonoBehaviour:
   MovimentoScript: {fileID: 2427007667916227209}
   Item: {fileID: 1714975146900317143, guid: f53db3091f1a5a04eb3de77189ccfcc0, type: 3}
   m_rb: {fileID: 2427007667916227447}
+--- !u!65 &7179087860070315332
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2427007667916227210}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7199600631223372727
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,7 +268,6 @@ GameObject:
   - component: {fileID: 7098188367959990518}
   - component: {fileID: 5673593125283606128}
   - component: {fileID: 6658827918061860061}
-  - component: {fileID: 1092058108156524970}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -323,16 +336,3 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &1092058108156524970
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7199600631223372727}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
