@@ -6,6 +6,19 @@ Project created for the global game jam 2020
 
 Four space heroines, must control their 20-second battery drones, to find the parts and fix their cookie machine.
 
+Have fun in this competitive splitscreen game for up to 4 players, where each controls their 20-second battery-powered drones to collect lost objects on the stage that result in tools to repair the last cookie machine that will save you from hunger!
+
+Each player will control a drone of space heroines that are represented by:
+
+**Valentina Tereshkova**, a Russian cosmonaut who was also the first woman to go into space
+
+**Amelia Earhart**, defender of women's rights and the first woman to fly alone across the Atlantic Ocean
+
+**Katherine Coleman Goble Johnson**,  a mathematician, physicist and space scientist who has made fundamental contributions to aeronautics and space exploration in the United States
+
+**Radia Joy Perlman**,  a computer scientist often referred to as the "mother of the Internet" for her invention of the Spanning Tree (STP) protocol
+
+
 ### Platforms 
 
 * MS Windows
@@ -32,7 +45,7 @@ Four space heroines, must control their 20-second battery drones, to find the pa
 * João Felipe de Lima Coleoni (Programmer)
 * Kleber de Oliveira Andrade (Programmer)
 * Leonardo Dantas Gomes de Lira (Level Design)
-* Matheus D'luac da Silva Lino (2d Artist)
+* Matheus D'luca da Silva Lino (2d Artist)
 
 ## License
 
