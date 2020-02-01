@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0110f026760e4ee4884db7a65f3b43c0, type: 2}
+  - {fileID: 2100000, guid: 8cc85bdaf0605c64e9ec477c2a89e461, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPoint: {fileID: 578704022848447027}
-  Drone: {fileID: 2427007667916227210, guid: 14c0650bb345b1f478de60fff9f73ee2, type: 3}
+  Drone: {fileID: 2427007667916227210, guid: 2e2bcbc444263c64e924f44d2d081a03, type: 3}
   m_Camera: {fileID: 3348822145923722730}
 --- !u!65 &7412755027961840468
 BoxCollider:
@@ -276,12 +276,12 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 2849835186a5c834ab01d5736444b17f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 24.843018
+      value: 23.843018
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 2849835186a5c834ab01d5736444b17f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.7568922
+      value: -1.4318919
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 2849835186a5c834ab01d5736444b17f,
         type: 3}
@@ -338,6 +338,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 3239.2673
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 2849835186a5c834ab01d5736444b17f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0d33084f5c238e34aa72c4b7920ea2f3, type: 2}
     - target: {fileID: -927199367670048503, guid: 2849835186a5c834ab01d5736444b17f,
         type: 3}
       propertyPath: m_Name

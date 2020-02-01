@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4e52663b2a437ea4f861c14339db6a1c, type: 2}
+  - {fileID: 2100000, guid: a19e42ccc4e0e0c41b8573489346889d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPoint: {fileID: 2580686450743462875}
-  Drone: {fileID: 2427007667916227210, guid: 14c0650bb345b1f478de60fff9f73ee2, type: 3}
+  Drone: {fileID: 2427007667916227210, guid: 7c07d4e118ee45a4c8b418a1163be5d5, type: 3}
   m_Camera: {fileID: 8260259550364470422}
 --- !u!1 &4125411037180829093
 GameObject:
@@ -281,7 +281,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 2849835186a5c834ab01d5736444b17f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.7568922
+      value: -1.3289566
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 2849835186a5c834ab01d5736444b17f,
         type: 3}
@@ -338,6 +338,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 3239.2673
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 2849835186a5c834ab01d5736444b17f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0d33084f5c238e34aa72c4b7920ea2f3, type: 2}
     - target: {fileID: -927199367670048503, guid: 2849835186a5c834ab01d5736444b17f,
         type: 3}
       propertyPath: m_Name
