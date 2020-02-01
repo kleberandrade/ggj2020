@@ -9,8 +9,11 @@ Have fun in this competitive splitscreen game for up to 4 players, where each co
 Each player will control a drone of space heroines that are represented by:
 
 **Valentina Tereshkova**, a Russian cosmonaut who was also the first woman to go into space
+
 **Amelia Earhart**, defender of women's rights and the first woman to fly alone across the Atlantic Ocean
+
 **Katherine Coleman Goble Johnson**,  a mathematician, physicist and space scientist who has made fundamental contributions to aeronautics and space exploration in the United States
+
 **Radia Joy Perlman**,  a computer scientist often referred to as the "mother of the Internet" for her invention of the Spanning Tree (STP) protocol
 
 ### Platforms 
