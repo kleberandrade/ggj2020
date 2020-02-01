@@ -14,7 +14,6 @@ public class Drop : MonoBehaviour
     public void DropDeath()
     {
         QtdItens = ControllerScript.Itens;
-        Destroy(ControllerScript);
         Destroy(MovimentoScript);
         
         if(QtdItens == 3){
