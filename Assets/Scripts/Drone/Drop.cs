@@ -7,10 +7,15 @@ public class Drop : MonoBehaviour
     public Controller ControllerScript;
     public Movimento MovimentoScript;
     public GameObject Item;
-    public Rigidbody m_rb;
+    private Rigidbody m_rb;
 
     private int QtdItens;
-    // Start is called before the first frame update
+
+    private void Awake()
+    {
+        m_rb = GetComponent<Rigidbody>();
+    }
+
     public void DropDeath()
     {
         QtdItens = ControllerScript.Itens;
@@ -29,5 +34,6 @@ public class Drop : MonoBehaviour
 
         m_rb.useGravity = true;
         m_rb.constraints = RigidbodyConstraints.None;
+        m_rb.isKinematic = false;
     }
 }

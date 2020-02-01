@@ -13,12 +13,12 @@ GameObject:
   - component: {fileID: 2573145087643597905}
   - component: {fileID: 7840127041075698150}
   - component: {fileID: 9119423395754997947}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Floor1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1490543045944513183
 Transform:
