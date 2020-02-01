@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ChangeScene : MonoBehaviour
 {
@@ -10,7 +8,8 @@ public class ChangeScene : MonoBehaviour
 
     public void Start()
     {
-        Invoke("LoadLevel", m_Time);
+        if (m_UseTimeToChangeScene)
+            Invoke("LoadLevel", m_Time);
     }
 
     public void LoadLevelWithTime()
