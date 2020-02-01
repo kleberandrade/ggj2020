@@ -4862,6 +4862,8 @@ MonoBehaviour:
   ControllerScript: {fileID: 3830350788394160392}
   MovimentoScript: {fileID: 2427007667916227209}
   Item: {fileID: 2998011688827844376, guid: 8e67849a466c87249ad18ec746d4c174, type: 3}
+  m_DeathMaterial: {fileID: 2100000, guid: e6615e047a79fae44b184fa8892a567a, type: 2}
+  m_Renderer: {fileID: 2658537175047267132}
 --- !u!54 &-6943046497783999089
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5111,6 +5113,12 @@ PrefabInstance:
 --- !u!4 &757320167261218291 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 41bf29cf15e4c984f81349534fac84da,
+    type: 3}
+  m_PrefabInstance: {fileID: 5762424320278236905}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &2658537175047267132 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -1504981713932161579, guid: 41bf29cf15e4c984f81349534fac84da,
     type: 3}
   m_PrefabInstance: {fileID: 5762424320278236905}
   m_PrefabAsset: {fileID: 0}

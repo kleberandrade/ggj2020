@@ -9,6 +9,10 @@ public class Drop : MonoBehaviour
     public GameObject Item;
     private Rigidbody m_rb;
 
+    public Material m_DeathMaterial;
+
+    public MeshRenderer m_Renderer;
+
     private int QtdItens;
 
     private void Awake()
@@ -30,6 +34,11 @@ public class Drop : MonoBehaviour
             Instantiate<GameObject>(Item, transform.position - new Vector3(-1.0f, 0.0f, 0.0f), transform.rotation); 
         }else if(QtdItens == 1){
             Instantiate<GameObject>(Item, transform.position, transform.rotation); 
+        }
+
+        for(int i = 0; i < m_Renderer.materials.Length; i++)
+        {
+            m_Renderer.materials[i] = m_DeathMaterial;
         }
 
         m_rb.useGravity = true;
