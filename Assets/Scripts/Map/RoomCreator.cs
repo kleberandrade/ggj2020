@@ -10,7 +10,7 @@ public class RoomCreator : MonoBehaviour
     [Header("Tiles")]
     public GameObject[] m_Corners;
     public GameObject[] m_Walls;
-    public GameObject[] m_Grounds;
+    public GameObject[] m_Floors;
 
     [Header("Path")]
     public GameObject[] m_Doors;
@@ -62,7 +62,7 @@ public class RoomCreator : MonoBehaviour
         if (x == 0 || z == 0 || x == m_Width - 1 || z == m_Depth - 1)
             return;
 
-        GameObject tile = GetRandomTile(m_Grounds, position);
+        GameObject tile = GetRandomTile(m_Floors, position);
         tile.transform.rotation = Quaternion.identity;
     }
 
