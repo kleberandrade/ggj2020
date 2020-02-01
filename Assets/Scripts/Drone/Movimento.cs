@@ -26,8 +26,8 @@ public class Movimento : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-		m_HorizontalInput = Input.GetAxis(m_HorizontalAxisName);
-		m_VerticalInput = Input.GetAxis(m_VerticalAxisName);
+		m_HorizontalInput = Input.GetAxisRaw(m_HorizontalAxisName);
+		m_VerticalInput = Input.GetAxisRaw(m_VerticalAxisName);
     }
 
     void FixedUpdate()
