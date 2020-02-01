@@ -121,6 +121,26 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &106223997 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3066842199437343047, guid: 62821f1ae2a17844da8cf21dd64bdba6,
+    type: 3}
+  m_PrefabInstance: {fileID: 354051507}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &106223998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106223997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 752c824be615f9946963c33f756e7199, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Speed: 180
+  m_RotateAxis: {x: 0, y: 0, z: 1}
 --- !u!1001 &354051507
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -238,7 +258,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: TransitionCanvas
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3066842199680088136, guid: 62821f1ae2a17844da8cf21dd64bdba6, type: 3}
+    - {fileID: 3066842199437343045, guid: 62821f1ae2a17844da8cf21dd64bdba6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 62821f1ae2a17844da8cf21dd64bdba6, type: 3}
 --- !u!1 &424808318
 GameObject:
@@ -1057,6 +1079,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_SmoothTime: 6
+  m_CanvasGroup: {fileID: 0}
 --- !u!225 &1389023535
 CanvasGroup:
   m_ObjectHideFlags: 0
