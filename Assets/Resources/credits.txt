@@ -20,12 +20,15 @@ t:Sound Designers
 Diego Giacomini
 Leonardo Porto Passos
 
-t:Tester
+t:Testers
 João Felipe de Lima Coleoni
 
 t:User Interface
 Kleber de Oliveira Andrade
 Leonardo Dantas Gomes de Lira
+
+t:Visual Effects
+Kleber de Oliveira Andrade
 
 t:Acknowledgment
 Faculdade de Tecnologia de Americana
@@ -39,3 +42,9 @@ The Roaring 20s
 We have cookies
 Unsung heroines
 GGJ20
+
+t:Tools
+Blender 2.82
+Illustrator
+Unity 2019.3.0f6
+Visual Studio Code
