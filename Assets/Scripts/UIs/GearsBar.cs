@@ -11,6 +11,8 @@ public class GearsBar : MonoBehaviour
     private int m_PickIndex = 0;
     private int m_PushIndex = 0;
 
+    public int Amount => m_PushIndex;
+
     private void Start()
     {
         m_Images = GetComponentsInChildren<Image>();
