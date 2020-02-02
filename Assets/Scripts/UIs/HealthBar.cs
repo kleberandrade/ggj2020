@@ -33,7 +33,6 @@ public class HealthBar : MonoBehaviour
         if (m_State == HealthBarState.Increase)
         {
             float value = (Time.time - m_StartTime) / m_LifeTime;
-            Debug.Log($"Increase {value}");
             m_Bar.fillAmount = 1.0f - value;
 
             if (value >= 1.0f)
