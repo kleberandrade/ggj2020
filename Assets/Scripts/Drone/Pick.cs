@@ -29,6 +29,8 @@ public class Pick : MonoBehaviour
                 MachineScript.UpdateItens(ControllerScript.Itens);
                 ControllerScript.Itens = 0;
             }
+        }else if(other.CompareTag("Untagged")){
+            return;
         }else{
             if(ControllerScript.Itens < 3){
                 EnemyMachineScript = other.GetComponent<Machine>();
