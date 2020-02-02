@@ -12,6 +12,8 @@ public class SyncGamepad : MonoBehaviour
     public string m_NextScene = "Gameplay";
     private ChangeScene m_ChangeScece;
 
+    private bool m_Synchronized;
+
     private void Start()
     {
         m_ChangeScece = GetComponent<ChangeScene>();
@@ -20,6 +22,9 @@ public class SyncGamepad : MonoBehaviour
 
     private void Update()
     {
+        if (m_Synchronized)
+            return;
+
         for (int i = 0; i < m_RequiredPlayerNumber; i++)
         {
             if (GetButtonToActivitade(i + 1))
@@ -32,7 +37,10 @@ public class SyncGamepad : MonoBehaviour
         if (VerifyIfAllJoysticks())
         {
             if (Input.GetButtonDown("XboxOneButtonA1") || Input.GetButtonDown("XboxOneButtonA2") || Input.GetButtonDown("XboxOneButtonA3") || Input.GetButtonDown("XboxOneButtonA4"))
+            {
+                m_Synchronized = true;
                 m_ChangeScece.LoadLevelWithLoading(m_NextScene);
+            }
         }
     }
 

@@ -13,12 +13,14 @@ public class Gameover : MonoBehaviour
         {
             m_Trophys[i].SetActive(false);
         }
+
+        Winner();
     }
 
     public void Winner()
     {
         User user = m_Ranking.Users.OrderByDescending(x => x.Gears).First<User>();
-        m_Trophys[user.Id].SetActive(false);
+        m_Trophys[user.Id].SetActive(true);
     }
 
     private void Update()
