@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/HowTo.unity
     guid: 3b4f07d7a75f03f4187bea886dc3a2d4
   - enabled: 1
+    path: Assets/Scenes/SyncGamepad.unity
+    guid: 730db23a74b11f14089e33fe4cfe22cc
+  - enabled: 1
     path: Assets/Scenes/Gameplay.unity
     guid: fc8d750e264c73f4cbee79808193acc7
   m_configObjects: {}

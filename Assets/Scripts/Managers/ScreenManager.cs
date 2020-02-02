@@ -25,6 +25,7 @@ public class ScreenManager : Singleton<ScreenManager>
     public IEnumerator ChangeScene(string nextSceneName, bool loading)
     {
         m_FaderAnimator.SetTrigger("Close");
+
         yield return new WaitForSeconds(m_FaderAnimator.GetCurrentAnimatorStateInfo(0).length);
 
         if (nextSceneName.Equals("Quit"))
@@ -42,6 +43,7 @@ public class ScreenManager : Singleton<ScreenManager>
             }
 
             AsyncOperation asyncScene = SceneManager.LoadSceneAsync(nextSceneName);
+
             asyncScene.allowSceneActivation = false;
 
             while (!asyncScene.isDone)

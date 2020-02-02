@@ -160,8 +160,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b61ae343d9a8e44590f53dac10d325f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_StartColor: {r: 0.23137254, g: 0.6431373, b: 0.69411767, a: 0}
-  m_EndColor: {r: 0.87843144, g: 0.7019608, b: 0.5137254, a: 0}
+  m_StartColor: {r: 0.23137254, g: 0.6431373, b: 0.69411767, a: 1}
+  m_EndColor: {r: 0.87843144, g: 0.7019608, b: 0.5137254, a: 1}
 --- !u!1 &3066842199230716042
 GameObject:
   m_ObjectHideFlags: 0
