@@ -16,3 +16,10 @@ Diego Giacomini
 Leonardo Porto Passos
 
 t:Game Designers
+João Felipe de Lima Coleoni
+Kleber de Oliveira Andrade
+Leonardo Dantas Gomes de Lira
+
+t:Tester
+João Felipe de Lima Coleoni
+
