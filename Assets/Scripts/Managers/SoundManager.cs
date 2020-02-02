@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class SoundManager : Singleton<SoundManager>
 {
@@ -31,6 +29,8 @@ public class SoundManager : Singleton<SoundManager>
         if (clipName == string.Empty)
             return;
 
+        Debug.Log($"Load {clipName}");
+
         AudioClip clip = Resources.Load<AudioClip>(musicPath + clipName);
         if (clip == null)
             return;
@@ -46,12 +46,12 @@ public class SoundManager : Singleton<SoundManager>
         sources[currentSource].Play();
     }
 
-	void SwapCurrent()
+    private void SwapCurrent()
     {
         currentSource = (++currentSource) % sources.Length;
     }
 
-	void Update()
+	private void Update()
     {
         if (useCameraPosition && Camera.main != null)
             transform.position = Camera.main.transform.position;
