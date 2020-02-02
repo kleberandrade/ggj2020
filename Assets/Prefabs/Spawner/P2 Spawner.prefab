@@ -392,6 +392,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Level: 0
   Itens: 0
+  NumPlayer: 2
 --- !u!114 &697729011298010028
 MonoBehaviour:
   m_ObjectHideFlags: 0

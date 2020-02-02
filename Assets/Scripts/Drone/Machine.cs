@@ -7,6 +7,7 @@ public class Machine : MonoBehaviour
     public int Level = 0;
 
     public int Itens = 0;
+    public int NumPlayer = 0;
     // Update is called once per frame
     public void UpdateItens(int ItensADD)
     {

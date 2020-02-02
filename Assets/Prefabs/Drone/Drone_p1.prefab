@@ -4814,7 +4814,7 @@ MonoBehaviour:
   m_LayerMask:
     serializedVersion: 2
     m_Bits: 4096
-  m_Distance: 0.5
+  m_Distance: 1.5
   m_DashTrigger: {fileID: 3598986307855017540}
 --- !u!114 &3830350788394160392
 MonoBehaviour:
@@ -4851,6 +4851,7 @@ MonoBehaviour:
   EnemyMachineScript: {fileID: 0}
   Nome_Tag: M_P1
   Place_Tag: 
+  NumPlayer: 1
 --- !u!114 &2506202822709912704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4868,6 +4869,7 @@ MonoBehaviour:
   Item: {fileID: 2998011688827844376, guid: 8e67849a466c87249ad18ec746d4c174, type: 3}
   m_DeathMaterial: {fileID: 2100000, guid: db06098f073b0934785827d11ad24acc, type: 2}
   m_Renderer: {fileID: 2658537175047267132}
+  NumPlayer: 1
 --- !u!54 &-6943046497783999089
 Rigidbody:
   m_ObjectHideFlags: 0
