@@ -14,11 +14,14 @@ public class Controller : MonoBehaviour
     
     void Start()
     {
-        Invoke("Death",20);
+        Invoke("TimeDeath",20);
     }
 
-    void Death()
+    public void Death(bool Impact = false)
     {
+        if(Impact){
+
+        }
         Invoke("RemoveCooldown",2);
         Destroy(PickScript);
         DropScript.DropDeath();
@@ -28,5 +31,9 @@ public class Controller : MonoBehaviour
     void RemoveCooldown(){
         SpawnScript.CoolDownToSpawn();
         Destroy(this);
+    }
+
+    void TimeDeath(){
+        Death(false);
     }
 }
