@@ -121,6 +121,77 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &23334199 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5380420024657715951, guid: ad4e99b49de615c48bb84f6bb5da2ab5,
+    type: 3}
+  m_PrefabInstance: {fileID: 652304137}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &23334202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23334199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 218fd98255d10234898028adca1ee758, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Range: 1000
+  m_EnableDirection: {x: -1, y: 0}
+  m_DisableDirection: {x: 1, y: 0}
+  m_EnableTime: 1
+  m_DisableTime: 0.5
+  m_XCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_YCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &82983793 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5380420023713665188, guid: ad4e99b49de615c48bb84f6bb5da2ab5,
@@ -323,6 +394,71 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 652304137}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &558986619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558986617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 218fd98255d10234898028adca1ee758, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Range: 1000
+  m_EnableDirection: {x: 0, y: 1}
+  m_DisableDirection: {x: 0, y: -1}
+  m_EnableTime: 0.5
+  m_DisableTime: 0.5
+  m_XCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_YCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &558986621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -577,6 +713,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad4e99b49de615c48bb84f6bb5da2ab5, type: 3}
+--- !u!1 &790342658 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2537745702739503293, guid: 62821f1ae2a17844da8cf21dd64bdba6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1586244520}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &790342662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790342658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1093589623
 GameObject:
   m_ObjectHideFlags: 0
@@ -993,20 +1150,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TransitionCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 3066842199680088141, guid: 62821f1ae2a17844da8cf21dd64bdba6,
+    - target: {fileID: 5267893585823971556, guid: 62821f1ae2a17844da8cf21dd64bdba6,
         type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -164.00049
-      objectReference: {fileID: 0}
-    - target: {fileID: 3066842200293177531, guid: 62821f1ae2a17844da8cf21dd64bdba6,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3066842200326179196, guid: 62821f1ae2a17844da8cf21dd64bdba6,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
+      propertyPath: m_FontData.m_FontStyle
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62821f1ae2a17844da8cf21dd64bdba6, type: 3}
