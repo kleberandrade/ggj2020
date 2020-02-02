@@ -24,7 +24,6 @@ public class GameManager : Singleton<GameManager>
     private void OnFinished()
     {
         CreateRanking();
-
     }
 
     private void CreateRanking()
