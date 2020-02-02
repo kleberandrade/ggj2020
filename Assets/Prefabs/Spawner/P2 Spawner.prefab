@@ -373,7 +373,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1751977151551785889}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.106888875, y: 0.055375356, z: 0.1}
@@ -409,6 +409,7 @@ MonoBehaviour:
   SpawnPoint: {fileID: 4399845971074677429}
   Drone: {fileID: 2427007667916227210, guid: 0518ae192db63d64ea0a53106fe733b2, type: 3}
   m_Camera: {fileID: 5172688880535533117}
+  m_Id: 2
 --- !u!1 &2484735977327801135
 GameObject:
   m_ObjectHideFlags: 0

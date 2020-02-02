@@ -5396,6 +5396,7 @@ MonoBehaviour:
   SpawnTransform: {fileID: 0}
   Camera: {fileID: 0}
   Itens: 0
+  NumPlayer: 3
 --- !u!114 &4597395571956292785
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -260,6 +260,7 @@ MonoBehaviour:
   SpawnPoint: {fileID: 6136494634878406028}
   Drone: {fileID: 2427007667916227210, guid: 7c07d4e118ee45a4c8b418a1163be5d5, type: 3}
   m_Camera: {fileID: 8260259550364470422}
+  m_Id: 1
 --- !u!1 &4125411037180829093
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,7 +11,9 @@ public class Controller : MonoBehaviour
     public Transform SpawnTransform;
     public CameraFollow Camera;
     public int Itens = 0;
-    
+    public int NumPlayer;
+
+
     void Start()
     {
         Invoke("TimeDeath",20);
@@ -22,6 +24,9 @@ public class Controller : MonoBehaviour
         if(Impact){
 
         }
+
+        GameManager.Instance.m_EnergyBars[NumPlayer - 1].Stop();
+
         Invoke("RemoveCooldown",2);
         Destroy(PickScript);
         DropScript.DropDeath();

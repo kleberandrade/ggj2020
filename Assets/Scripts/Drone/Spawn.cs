@@ -7,6 +7,7 @@ public class Spawn : MonoBehaviour
     public GameObject Drone;
     public CameraFollow m_Camera;
     private bool Cooldown = false;
+    public int m_Id;
 
     private void Start()
     {
@@ -18,6 +19,8 @@ public class Spawn : MonoBehaviour
         if (Input.GetButtonDown(m_SpawnCommand) && !Cooldown)
         {
             Cooldown = true;
+            GameManager.Instance.m_EnergyBars[m_Id - 1].Play();
+
             var AUX = Instantiate<GameObject>(Drone, SpawnPoint.transform.position + new Vector3(0.0f, 2.0f, 0.0f), SpawnPoint.transform.rotation);
             AUX.GetComponent<Controller>().SpawnScript = this; 
             AUX.GetComponent<Controller>().Camera = m_Camera; 
