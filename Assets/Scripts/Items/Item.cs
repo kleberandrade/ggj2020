@@ -19,7 +19,7 @@ public class Item : MonoBehaviour
         m_Collider = GetComponent<Collider>();
     }
 
-    private void Start()
+    private void OnEnable()
     {
         m_Collider.enabled = false;
         m_Particulas.SetActive(false);

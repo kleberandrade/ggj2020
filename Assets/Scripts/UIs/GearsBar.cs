@@ -28,6 +28,9 @@ public class GearsBar : MonoBehaviour
 
     private void Change(int index, int type)
     {
+        if (index >= m_Images.Length)
+            return;
+
         m_Images[index].sprite = m_Gears[type];
         m_Images[index].color = m_Colors[type];
     } 

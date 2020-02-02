@@ -47,7 +47,10 @@ public class Chronometer : MonoBehaviour
             m_Stopped = true;
 
             if (OnFinished != null)
+            {
+                Debug.Log("[Chronometer] Invoke OnFinish");
                 OnFinished();
+            }
         }
     }
 }

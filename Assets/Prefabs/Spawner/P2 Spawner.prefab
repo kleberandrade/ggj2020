@@ -407,7 +407,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SpawnCommand: XboxOneButtonA2
   SpawnPoint: {fileID: 4399845971074677429}
-  Drone: {fileID: 2427007667916227210, guid: 0518ae192db63d64ea0a53106fe733b2, type: 3}
+  Drone: {fileID: 2427007667916227210, guid: 622a3f48767248c468fdd61b28159f30, type: 3}
   m_Camera: {fileID: 5172688880535533117}
   m_Id: 2
 --- !u!1 &2484735977327801135
