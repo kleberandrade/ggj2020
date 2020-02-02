@@ -41,14 +41,11 @@ public class Movimento : MonoBehaviour
         if (m_Movement.magnitude > 0.0f)
         {
             Quaternion angle = Quaternion.LookRotation(m_Movement);
-            m_rb.MoveRotation(angle);
-        }
 
-        m_rb.MovePosition(m_rb.position + m_Movement.normalized * m_Speed * Time.fixedDeltaTime);
             RaycastHit hit;
-            if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, m_Distance, m_LayerMask))
+            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, m_Distance, m_LayerMask))
                 Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
-             else 
+            else
                 transform.Translate(Vector3.forward * m_Speed * Time.deltaTime);
         }
 

@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -36,7 +35,9 @@ public class HealthBar : MonoBehaviour
     {
         m_Value = Mathf.Clamp(m_Value + value, 0.0f, m_MaxValue);
         m_Bar.fillAmount = m_Value / m_MaxValue;
-        m_Label.text = string.Format("{0:0} / {1:0}", m_Value, m_MaxValue);
+
+        if (m_Label)
+            m_Label.text = string.Format("{0:0} / {1:0}", m_Value, m_MaxValue);
     }
 
     private IEnumerator UpdateHealthTime(float fromValue, float toValue)
@@ -50,14 +51,5 @@ public class HealthBar : MonoBehaviour
             m_Label.text = string.Format("{0:0} / {1:0}", m_Value, m_MaxValue);
             yield return null;
         }
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.W))
-            SetIncrementalValue(50);
-
-        if (Input.GetKeyDown(KeyCode.S))
-            SetIncrementalValue(-50);
     }
 }
