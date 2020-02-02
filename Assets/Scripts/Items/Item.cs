@@ -8,7 +8,6 @@ public class Item : MonoBehaviour
     public Material m_Normal;
     public Material m_Invisible;
     public GameObject m_Particulas;
-
     private Renderer m_Renderer;
     private Collider m_Collider;
 

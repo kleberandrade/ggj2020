@@ -110,7 +110,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Level: 0
   Itens: 0
+<<<<<<< Updated upstream
 --- !u!114 &578704022848447029
+=======
+  NumPlayer: 3
+--- !u!114 &5737097372915186157
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

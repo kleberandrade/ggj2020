@@ -12,6 +12,7 @@ public class Drop : MonoBehaviour
     public Material m_DeathMaterial;
 
     public MeshRenderer m_Renderer;
+    public int NumPlayer;
 
     private int QtdItens;
     // Start is called before the first frame update
@@ -24,11 +25,17 @@ public class Drop : MonoBehaviour
             Instantiate<GameObject>(Item, transform.position - new Vector3(0.0f, 0.0f, 1.0f), transform.rotation); 
             Instantiate<GameObject>(Item, transform.position - new Vector3(1.0f, 0.0f, -1.0f), transform.rotation); 
             Instantiate<GameObject>(Item, transform.position - new Vector3(-1.0f, 0.0f, -1.0f), transform.rotation); 
+            GameManager.Instance.m_GearsBars[NumPlayer-1].Drop();
+            GameManager.Instance.m_GearsBars[NumPlayer-1].Drop();
+            GameManager.Instance.m_GearsBars[NumPlayer-1].Drop();
         }else if(QtdItens == 2){
             Instantiate<GameObject>(Item, transform.position - new Vector3(1.0f, 0.0f, 0.0f), transform.rotation); 
             Instantiate<GameObject>(Item, transform.position - new Vector3(-1.0f, 0.0f, 0.0f), transform.rotation); 
+            GameManager.Instance.m_GearsBars[NumPlayer-1].Drop();
+            GameManager.Instance.m_GearsBars[NumPlayer-1].Drop();
         }else if(QtdItens == 1){
             Instantiate<GameObject>(Item, transform.position, transform.rotation); 
+            GameManager.Instance.m_GearsBars[NumPlayer-1].Drop();
         }
 
         for(int i = 0; i < m_Renderer.materials.Length; i++)
