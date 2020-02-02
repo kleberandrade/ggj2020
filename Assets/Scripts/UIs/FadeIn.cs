@@ -11,6 +11,7 @@ public class FadeIn : MonoBehaviour
     private void Start()
     {
         m_CanvasGroup = GetComponent<CanvasGroup>();
+        m_CanvasGroup.alpha = 1.0f;
         m_StartTime = Time.time;
     }
 
