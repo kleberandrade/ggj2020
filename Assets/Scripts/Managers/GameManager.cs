@@ -15,16 +15,20 @@ public class GameManager : Singleton<GameManager>
     private void OnEnable()
     {
         Chronometer.OnFinished += OnFinished;
+        GearsBar.OnFinished += OnFinished;
     }
 
     private void OnDisable()
     {
         Chronometer.OnFinished -= OnFinished;
+        GearsBar.OnFinished -= OnFinished;
     }
 
     private void OnFinished()
     {
         CreateRanking();
+
+        ScreenManager.Instance.LoadLevel("Gameover");
     }
 
     private void CreateRanking()
@@ -32,6 +36,8 @@ public class GameManager : Singleton<GameManager>
         Ranking ranking = new Ranking();
         for (int i = 0; i < m_GearsBars.Length; i++)
             ranking.Users.Add(new User() { Id = i + 1, Gears = m_GearsBars[i].Amount });
+
+        Gameover.m_Ranking = ranking;
     }
 }
 

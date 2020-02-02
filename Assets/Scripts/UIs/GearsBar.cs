@@ -3,6 +3,9 @@ using UnityEngine.UI;
 
 public class GearsBar : MonoBehaviour
 {
+    public delegate void OnFinishedHandler();
+    public static event OnFinishedHandler OnFinished;
+
     public Sprite[] m_Gears;
     public Color[] m_Colors; 
 
@@ -45,6 +48,9 @@ public class GearsBar : MonoBehaviour
     {
         Change(m_PushIndex, 2);
         m_PushIndex++;
+
+        if (Amount >= 9 && OnFinished != null)
+            OnFinished();
     }
 
     public void Pop()
