@@ -30,7 +30,11 @@ public class ScreenManager : Singleton<ScreenManager>
 
         if (nextSceneName.Equals("Quit"))
         {
-            //Helpers.Quit();
+#if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+#else
+            Application.Quit();
+#endif
         }
         else
         {

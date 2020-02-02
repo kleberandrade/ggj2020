@@ -3,60 +3,50 @@
 public class SoundManager : Singleton<SoundManager>
 {
     [Range(0.0f, 10.0f)]
-    public float transitionTime = 1.0f;
+    public float m_TransitionTime = 1.0f;
     [Range(0.0f, 1.0f)]
-    public float bgmVolume = 1.0f;
-    public string musicPath = "Audios/Music/";
-    public bool useCameraPosition = true;
-    private float[] finalVolumes = { 0.0f, 1.0f };
-    private AudioSource[] sources = new AudioSource[2];
-    private int currentSource = 1;
+    public float m_BgmVolume = 1.0f;
+    public bool m_UseCameraPosition = true;
+    private float[] m_FinalVolumes = { 0.0f, 1.0f };
+    private AudioSource[] m_Sources = new AudioSource[2];
+    private int m_CurrentSource = 1;
 
     private void Awake()
     {
-        for (int i = 0; i < sources.Length; i++)
+        for (int i = 0; i < m_Sources.Length; i++)
         {
-            sources[i] = gameObject.AddComponent<AudioSource>();
-            sources[i].loop = true;
+            m_Sources[i] = gameObject.AddComponent<AudioSource>();
+            m_Sources[i].loop = true;
         }
     }
 
-	public void PlayClip(string clipName)
+	public void PlayClip(AudioClip clip)
     {
-        if (clipName == null)
-            return;
-
-        if (clipName == string.Empty)
-            return;
-
-        Debug.Log($"Load {clipName}");
-
-        AudioClip clip = Resources.Load<AudioClip>(musicPath + clipName);
         if (clip == null)
             return;
 
-        if (clip == sources[currentSource].clip)
+        if (clip == m_Sources[m_CurrentSource].clip)
             return;
 
-        finalVolumes[currentSource] = 0.0f;
+        m_FinalVolumes[m_CurrentSource] = 0.0f;
         SwapCurrent();
-        finalVolumes[currentSource] = bgmVolume;
+        m_FinalVolumes[m_CurrentSource] = m_BgmVolume;
 
-        sources[currentSource].clip = clip;
-        sources[currentSource].Play();
+        m_Sources[m_CurrentSource].clip = clip;
+        m_Sources[m_CurrentSource].Play();
     }
 
     private void SwapCurrent()
     {
-        currentSource = (++currentSource) % sources.Length;
+        m_CurrentSource = (++m_CurrentSource) % m_Sources.Length;
     }
 
 	private void Update()
     {
-        if (useCameraPosition && Camera.main != null)
+        if (m_UseCameraPosition && Camera.main != null)
             transform.position = Camera.main.transform.position;
 
-        sources[0].volume = Mathf.Lerp(sources[0].volume, finalVolumes[0], transitionTime * Time.deltaTime);
-        sources[1].volume = Mathf.Lerp(sources[1].volume, finalVolumes[1], transitionTime * Time.deltaTime);
+        m_Sources[0].volume = Mathf.Lerp(m_Sources[0].volume, m_FinalVolumes[0], m_TransitionTime * Time.deltaTime);
+        m_Sources[1].volume = Mathf.Lerp(m_Sources[1].volume, m_FinalVolumes[1], m_TransitionTime * Time.deltaTime);
     }
 }

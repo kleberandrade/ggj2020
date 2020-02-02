@@ -2,10 +2,10 @@
 
 public class StartPlayMusic : MonoBehaviour
 {
-    public string m_musicName;
+    public AudioClip m_Music;
 
     private void Start()
     {
-        SoundManager.Instance.PlayClip(m_musicName);
+        SoundManager.Instance.PlayClip(m_Music);
     }
 }

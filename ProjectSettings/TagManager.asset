@@ -9,6 +9,7 @@ TagManager:
   - M_P2
   - M_P3
   - M_P4
+  - SoundManager
   layers:
   - Default
   - TransparentFX
