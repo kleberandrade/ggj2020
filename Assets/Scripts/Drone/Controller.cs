@@ -24,11 +24,11 @@ public class Controller : MonoBehaviour
         if(Impact){
 
         }
-
         GameManager.Instance.m_EnergyBars[NumPlayer - 1].Stop();
 
         Invoke("RemoveCooldown",2);
         Destroy(PickScript);
+        Destroy(transform.GetChild(3).gameObject);
         DropScript.DropDeath();
         Camera.m_Target = SpawnTransform;
     }
