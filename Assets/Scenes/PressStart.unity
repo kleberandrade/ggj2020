@@ -188,6 +188,11 @@ PrefabInstance:
       propertyPath: m_EndColor.b
       value: 0.69411767
       objectReference: {fileID: 0}
+    - target: {fileID: 3066842198835209854, guid: 62821f1ae2a17844da8cf21dd64bdba6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3066842199503065929, guid: 62821f1ae2a17844da8cf21dd64bdba6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -298,6 +303,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: TransitionCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3066842200326179196, guid: 62821f1ae2a17844da8cf21dd64bdba6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6363353911785893223, guid: 62821f1ae2a17844da8cf21dd64bdba6,
+        type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: 53d5c4fbc3fbbb240b89da753a9a35fc, type: 3}
     m_RemovedComponents:
     - {fileID: 3066842199680088136, guid: 62821f1ae2a17844da8cf21dd64bdba6, type: 3}
     - {fileID: 3066842199437343045, guid: 62821f1ae2a17844da8cf21dd64bdba6, type: 3}
@@ -804,7 +819,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 38a0d34dd5393584fb99171b32fc5174, type: 3}
-    m_FontSize: 16
+    m_FontSize: 18
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
@@ -1419,7 +1434,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 38a0d34dd5393584fb99171b32fc5174, type: 3}
-    m_FontSize: 16
+    m_FontSize: 18
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
@@ -1430,7 +1445,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\xA9 2020 FATECANOS. All rights reserved."
+  m_Text: "\xA9 2020 HUMAN MACHINE. All rights reserved."
 --- !u!222 &1710490160
 CanvasRenderer:
   m_ObjectHideFlags: 0
