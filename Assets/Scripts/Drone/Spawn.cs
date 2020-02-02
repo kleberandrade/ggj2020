@@ -20,6 +20,7 @@ public class Spawn : MonoBehaviour
         {
             Cooldown = true;
             GameManager.Instance.m_EnergyBars[m_Id - 1].Play();
+            GameManager.Instance.m_SpawnButton[m_Id-1].DisableUI();
 
             var AUX = Instantiate<GameObject>(Drone, SpawnPoint.transform.position + new Vector3(0.0f, 2.0f, 0.0f), SpawnPoint.transform.rotation);
             AUX.GetComponent<Controller>().SpawnScript = this; 
@@ -32,5 +33,6 @@ public class Spawn : MonoBehaviour
     public void CoolDownToSpawn()
     {
         Cooldown = false;
+        GameManager.Instance.m_SpawnButton[m_Id-1].EnableUI();
     }
 }

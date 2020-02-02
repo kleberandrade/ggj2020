@@ -50,6 +50,7 @@ public class GearsBar : MonoBehaviour
     public void Pop()
     {
         m_PushIndex--;
+        m_PickIndex--;
         Change(m_PushIndex, 0);
     }
 }
