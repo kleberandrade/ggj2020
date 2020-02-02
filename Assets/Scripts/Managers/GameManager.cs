@@ -7,6 +7,7 @@ public class GameManager : Singleton<GameManager>
     public HealthBar[] m_EnergyBars;
     public GearsBar[] m_GearsBars;
     public Chronometer m_Chronometer;
+    public SpawnUI[] m_SpawnButton; 
 
     [Header("Setup")]
     public float m_MaxTime = 300.0f;
