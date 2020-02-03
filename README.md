@@ -6,27 +6,15 @@ Project created for the global game jam 2020
 
 Four space heroines, must control their 20-second battery drones, to find the parts and fix their cookie machine.
 Have fun in this competitive splitscreen game for up to 4 players, where each controls their 20-second battery-powered drones to collect lost objects on the stage that result in tools to repair the last cookie machine that will save you from hunger!
-Each player will control a drone of space heroines that are represented by:
 
-**Valentina Tereshkova**, a Russian cosmonaut who was also the first woman to go into space
+### Heroines
 
-**Amelia Earhart**, defender of women's rights and the first woman to fly alone across the Atlantic Ocean
+* **Valentina Tereshkova**, a Russian cosmonaut who was also the first woman to go into space
+* **Amelia Earhart**, defender of women's rights and the first woman to fly alone across the Atlantic Ocean
+* **Katherine Coleman Goble Johnson**,  a mathematician, physicist and space scientist who has made fundamental contributions to aeronautics and space exploration in the United States
+* **Radia Joy Perlman**,  a computer scientist often referred to as the "mother of the Internet" for her invention of the Spanning Tree (STP) protocol
 
-**Katherine Coleman Goble Johnson**,  a mathematician, physicist and space scientist who has made fundamental contributions to aeronautics and space exploration in the United States
-
-**Radia Joy Perlman**,  a computer scientist often referred to as the "mother of the Internet" for her invention of the Spanning Tree (STP) protocol
-
-### Platforms 
-
-* MS Windows
-
-### Tools
-
-* Unity 2019.3.0f6
-* Blender
-* VS Code
-
-## Diversifiers used
+### Diversifiers used
 
 * **III** - There must never be more than three items visible on the screen at a time. 
 * **Dead artists society** - Make a game where the dead players can affect the visuals but not the gameplay directly.
@@ -34,6 +22,17 @@ Each player will control a drone of space heroines that are represented by:
 * **We have cookies** - Your game is designed to be playable next to a pool of edible rewards. The game tells the player when they may eat one.
 * **Unsung heroines** - Your game is based on a less well known woman or group of women who shaped history.
 * **GGJ20** - Your Game takes exactly 20 seconds to play.
+
+### Platforms 
+
+* MS Windows
+
+## Tools
+
+* Ableton
+* Blender
+* Unity 2019.3.0f6
+* VS Code
 
 ## Team
 
@@ -44,6 +43,14 @@ Each player will control a drone of space heroines that are represented by:
 * Leonardo Dantas Gomes de Lira (Level Design)
 * Leonardo Porto Passos (Music/SFX)
 * Matheus D'luca da Silva Lino (2d Artist)
+
+## Links
+
+* GGJ page: https://globalgamejam.org/2020/games/need-cookies-8
+* Youtube: http://www.youtube.com/watch?v=Yjp-qZ7QFzg
+* Itch.io: https://leodantas.itch.io/need-for-the-cookies
+* EPTV 1: https://globoplay.globo.com/v/8285104/
+* EPTV 2: https://globoplay.globo.com/v/8286132/
 
 ## License
 
