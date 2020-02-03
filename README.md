@@ -1,6 +1,6 @@
-# Global Game Jam 2020
+# Need for Cookies
 
-Project created for the global game jam 2020
+"Need for Cookies" is a game created at Global Game Jam
 
 ## The Game
 
