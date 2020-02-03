@@ -29,6 +29,8 @@ public class RoomCreator : MonoBehaviour
 
     private void CreateRoom()
     {
+        Debug.Log("[RoomCreator] Creator Room");
+
         float halfWidth = (m_Width * m_Size - m_Size) * 0.5f;
         float halfDepth = (m_Depth * m_Size - m_Size) * 0.5f;
 

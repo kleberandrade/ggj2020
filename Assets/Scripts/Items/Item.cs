@@ -19,13 +19,14 @@ public class Item : MonoBehaviour
         m_Collider = GetComponent<Collider>();
     }
 
-    private void OnEnable()
+    private void Start()
     {
         m_Collider.enabled = false;
         m_Particulas.SetActive(false);
         m_Renderer.material = m_Invisible;
         m_Visible = false;
     }
+
 
     private void Update()
     {

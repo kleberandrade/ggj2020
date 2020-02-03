@@ -34,8 +34,15 @@ public class MapCreator : Singleton<MapCreator>
         StartCoroutine(CreateMap());
     }
 
+    private void OnDisable()
+    {
+        Item.m_Count = 0;
+    }
+
     private IEnumerator CreateMap()
     {
+        Debug.Log("[MapCreator] CreateMap");
+
         float halfWidth = (m_Width * m_Size - m_Size) * 0.5f;
         float halfDepth = (m_Depth * m_Size - m_Size) * 0.5f;
 
