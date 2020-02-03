@@ -63,7 +63,7 @@ Have fun in this competitive splitscreen game for up to 4 players, where each co
 
 ## License
 
-    Copyright 2019 Kleber de Oliveira Andrade
+    Copyright 2020 Kleber de Oliveira Andrade
     
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
