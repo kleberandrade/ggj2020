@@ -7,6 +7,11 @@ Project created for the global game jam 2020
 Four space heroines, must control their 20-second battery drones, to find the parts and fix their cookie machine.
 Have fun in this competitive splitscreen game for up to 4 players, where each controls their 20-second battery-powered drones to collect lost objects on the stage that result in tools to repair the last cookie machine that will save you from hunger!
 
+<p align="center">
+    <img src="https://github.com/kleberandrade/ggj2020/blob/master/Screenshots/gameplay.png" weight="500"/>
+    <img src="https://github.com/kleberandrade/ggj2020/blob/master/Screenshots/playtest.jpg" weight="500"/>
+</p>
+
 ### Heroines
 
 * **Valentina Tereshkova**, a Russian cosmonaut who was also the first woman to go into space
@@ -43,6 +48,10 @@ Have fun in this competitive splitscreen game for up to 4 players, where each co
 * Leonardo Dantas Gomes de Lira (Level Design)
 * Leonardo Porto Passos (Music/SFX)
 * Matheus D'luca da Silva Lino (2d Artist)
+
+<p align="center">
+    <img src="https://github.com/kleberandrade/ggj2020/blob/master/Screenshots/team.jpg" weight="500"/>
+</p>
 
 ## Links
 
