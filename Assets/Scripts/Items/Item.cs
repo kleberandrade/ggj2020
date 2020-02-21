@@ -26,8 +26,6 @@ public class Item : MonoBehaviour
         m_Renderer.material = m_Invisible;
         m_Visible = false;
     }
-
-
     private void Update()
     {
         if (m_Renderer.isVisible) 

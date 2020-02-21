@@ -46,7 +46,8 @@ PlayerSettings:
     duration: 2
   - logo: {fileID: 21300000, guid: b61788a0a61968048a82c04723169f04, type: 3}
     duration: 2
-  m_VirtualRealitySplashScreen: {fileID: 0}
+  m_VirtualRealitySplashScreen: {fileID: 2800000, guid: d208cd12e68d72949904d00698a7b8e5,
+    type: 3}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1024
   defaultScreenHeight: 768
@@ -109,6 +110,7 @@ PlayerSettings:
   xboxOneMonoLoggingLevel: 0
   xboxOneLoggingLevel: 1
   xboxOneDisableEsram: 0
+  xboxOneEnableTypeOptimization: 0
   xboxOnePresentImmediateThreshold: 0
   switchQueueCommandMemory: 0
   switchQueueControlMemory: 0
@@ -603,16 +605,31 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Template_Lightweight
-  metroPackageVersion: 
-  metroCertificatePath: 
+  metroPackageName: GlobalGameJam
+  metroPackageVersion: 1.0.0.0
+  metroCertificatePath: D:\Projects\Unity\GGJ2020\Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: Template_Lightweight
-  wsaImages: {}
-  metroTileShortName: 
+  metroCertificateSubject: Human Machine
+  metroCertificateIssuer: Human Machine
+  metroCertificateNotAfter: 0036cbe37607d701
+  metroApplicationDescription: 'Four space heroines, must control their 20-second
+    battery drones, to find the parts and fix their cookie machine. Have fun in this
+    competitive multiplayer game with up to 4 players splitscreen, where each controls
+    their 20-second battery-powered drones to collect lost objects on the stage that
+    result in tools to repair the last cookie machine that will save you from hunger!
+    Each player will control a drone of space heroines that are represented by: Valentina
+    Tereshkova, a Russian cosmonaut who was also the first woman to go into space
+    Amelia Earhart, defender of women''s rights and the first woman to fly alone
+    across the Atlantic Ocean Katherine Coleman Goble Johnson, a mathematician, physicist
+    and space scientist who has made fundamental contributions to aeronautics and
+    space exploration in the United States Radia Joy Perlman, a computer scientist
+    often referred to as the "mother of the Internet" for her invention of the Spanning
+    Tree (STP) protocol'
+  wsaImages:
+    2031664: Assets/Sprites/Icons/android-icon-48x48.png
+    2162788: Assets/Sprites/Icons/ms-icon-150x150.png
+    2228324: Assets/Sprites/Icons/ms-icon-310x310.png
+  metroTileShortName: Need For Cookies
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
@@ -625,8 +642,54 @@ PlayerSettings:
   metroSplashScreenBackgroundColor: {r: 0.12941177, g: 0.17254902, b: 0.21568628,
     a: 1}
   metroSplashScreenUseBackgroundColor: 0
-  platformCapabilities: {}
-  metroTargetDeviceFamilies: {}
+  platformCapabilities:
+    WindowsStoreApps:
+      AllJoyn: False
+      Appointments: False
+      BackgroundMediaPlayback: False
+      BlockedChatMessages: False
+      Bluetooth: False
+      Chat: False
+      CodeGeneration: False
+      Contacts: False
+      EnterpriseAuthentication: False
+      GazeInput: False
+      HumanInterfaceDevice: False
+      InputInjectionBrokered: False
+      InternetClient: False
+      InternetClientServer: False
+      Location: False
+      LowLevelDevices: False
+      Microphone: False
+      MusicLibrary: False
+      Objects3D: False
+      OfflineMapsManagement: False
+      PhoneCall: False
+      PhoneCallHistoryPublic: False
+      PicturesLibrary: False
+      PointOfService: False
+      PrivateNetworkClientServer: False
+      Proximity: False
+      RecordedCallsFolder: False
+      RemoteSystem: False
+      RemovableStorage: False
+      SharedUserCertificates: False
+      SpatialPerception: False
+      SystemManagement: False
+      UserAccountInformation: False
+      UserDataTasks: False
+      UserNotificationListener: False
+      VideosLibrary: False
+      VoipCall: False
+      WebCam: False
+  metroTargetDeviceFamilies:
+    Desktop: False
+    Holographic: False
+    IoT: False
+    IoTHeadless: False
+    Mobile: False
+    Team: False
+    Xbox: False
   metroFTAName: 
   metroFTAFileTypes: []
   metroProtocolName: 

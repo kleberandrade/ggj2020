@@ -20,8 +20,14 @@ public class Movimento : MonoBehaviour
     public GameObject m_DashTrigger;
     private bool CanDash = true;
 
+    [Header("SFX")]
+    public AudioClip m_DashAudioClip;
+
+    private AudioSource m_AudioSource;
+
     private void Start()
     {
+        m_AudioSource = GetComponent<AudioSource>();
         m_StartDirection = transform.forward;
     }
 
@@ -33,7 +39,9 @@ public class Movimento : MonoBehaviour
         m_Movement = new Vector3(m_HorizontalInput, 0.0f, m_VerticalInput).normalized;
 
         if (m_Movement.magnitude > 0.0f)
-            transform.rotation = Quaternion.LookRotation(m_Movement) * Quaternion.LookRotation(m_StartDirection);    
+        {
+            transform.rotation = Quaternion.LookRotation(m_Movement) * Quaternion.LookRotation(m_StartDirection);
+        }
     }
 
     private void FixedUpdate()
@@ -49,7 +57,10 @@ public class Movimento : MonoBehaviour
                 transform.Translate(Vector3.forward * m_Speed * Time.deltaTime);
         }
 
-        if(Input.GetAxisRaw(m_DashAxisName) != 0 && CanDash){
+        if(Input.GetAxisRaw(m_DashAxisName) != 0 && CanDash)
+        {
+            m_AudioSource.clip = m_DashAudioClip;
+            m_AudioSource.Play();
             CanDash = false;
             m_DashTrigger.SetActive(true);
             m_Distance = 2.0f;
@@ -58,7 +69,8 @@ public class Movimento : MonoBehaviour
         }
     }
 
-    void ResetSpeed(){
+    private void ResetSpeed()
+    {
         m_DashTrigger.SetActive(false);
         m_Speed = m_Speed / m_MultiplyDash;
         m_Distance = 0.5f;

@@ -9,24 +9,29 @@ public class Spawn : MonoBehaviour
     private bool Cooldown = false;
     public int m_Id;
 
+    [Header("SFX")]
+    public AudioClip m_SpawnAudioClip;
+
     private void Start()
     {
         m_Camera = GetComponentInChildren<CameraFollow>();
     }
 
-    void Update()
+    private void Update()
     {
         if (Input.GetButtonDown(m_SpawnCommand) && !Cooldown)
         {
+            AudioSource.PlayClipAtPoint(m_SpawnAudioClip, transform.position, 1.0f);
+
             Cooldown = true;
             GameManager.Instance.m_EnergyBars[m_Id - 1].Play();
             GameManager.Instance.m_SpawnButton[m_Id-1].DisableUI();
 
-            var AUX = Instantiate<GameObject>(Drone, SpawnPoint.transform.position + new Vector3(0.0f, 2.0f, 0.0f), SpawnPoint.transform.rotation);
-            AUX.GetComponent<Controller>().SpawnScript = this; 
-            AUX.GetComponent<Controller>().Camera = m_Camera; 
-            AUX.GetComponent<Controller>().SpawnTransform = transform; 
-            m_Camera.m_Target = AUX.transform;
+            var drone = Instantiate<GameObject>(Drone, SpawnPoint.transform.position + new Vector3(0.0f, 2.0f, 0.0f), SpawnPoint.transform.rotation);
+            drone.GetComponent<Controller>().SpawnScript = this; 
+            drone.GetComponent<Controller>().Camera = m_Camera; 
+            drone.GetComponent<Controller>().SpawnTransform = transform; 
+            m_Camera.m_Target = drone.transform;
         }
     }
 

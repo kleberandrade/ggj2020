@@ -1094,7 +1094,7 @@ MonoBehaviour:
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
+  m_ForceModuleActive: 1
 --- !u!114 &2090443013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1197,15 +1197,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: MenuSFX
       objectReference: {fileID: 0}
-    - target: {fileID: 345124024586356631, guid: 94213a734ca7d934abbf584153b4cf70,
-        type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: b4e9d0e0cc9273442aeca529486df0c0, type: 3}
-    - target: {fileID: 345124024902088598, guid: 94213a734ca7d934abbf584153b4cf70,
-        type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 85d2b458461da0046bce9e9faa6d1cb2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94213a734ca7d934abbf584153b4cf70, type: 3}

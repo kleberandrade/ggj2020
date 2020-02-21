@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class DashImpact : MonoBehaviour
 {
-    //public Drop Controller;
+    public AudioClip m_Explosion;
+
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player")){
+        if(other.CompareTag("Player"))
+        {
+
             other.GetComponent<Controller>().Death(true);
         }
     }
